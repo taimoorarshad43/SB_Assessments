@@ -6,4 +6,3 @@
 - BUG #4: In helpers/partialUpdate.js we have a bug with the for loop in where key is being used here and then again outside the function.
 - BUG #5: In models/user.js a new ExpressError is created but never thrown with the throw keyword.
 - BUG #6: In models/user.js the getAll() function accepts parameters that it never uses.
-<!-- - BUG #7: In routes/users.js the PATCH router doesn't need requireAdmin as middleware. -->

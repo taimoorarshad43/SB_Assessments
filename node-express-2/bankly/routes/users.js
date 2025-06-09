@@ -64,8 +64,6 @@ router.get('/:username', authUser, requireLogin, async function(
  */
 
 router.patch('/:username', authUser, requireLogin, requireAdmin, async function(
-// // FIXES BUG #7
-// router.patch('/:username', authUser, requireLogin, async function(
   req,
   res,
   next
