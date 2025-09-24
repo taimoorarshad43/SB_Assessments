@@ -1,0 +1,81 @@
+/* Lists of stories */
+
+.stories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: story-counter;
+}
+
+.stories-list > li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: flex-start;
+  counter-increment: story-counter;
+  position: relative;
+}
+
+.stories-list > li:last-child {
+  border-bottom: none;
+}
+
+.stories-list > li::before {
+  content: counter(story-counter) ".";
+  font-weight: bold;
+  color: black;
+  margin-right: 8px;
+  min-width: 20px;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+  text-align: center;
+  color: #666;
+}
+
+/* Individual stories */
+
+.story-link {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.story-link:hover {
+  text-decoration: underline;
+}
+
+.story-hostname {
+  color: #666;
+  font-size: 0.85rem;
+  margin-left: 4px;
+}
+
+.story-author {
+  color: #90EE90;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.story-user {
+  color: #FFA500;
+  font-size: 0.8rem;
+  margin-top: 1px;
+}
+
+/* Star and delete button styling */
+.star, .trash-can {
+  margin-right: 8px;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.star:hover, .trash-can:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,43 @@
+/* Navigation bar */
+
+nav {
+  display: flex;
+  background-color: #ff6600;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.main-nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  margin: 0 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.nav-right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.nav-right .nav-link {
+  margin: 0 4px;
+}
